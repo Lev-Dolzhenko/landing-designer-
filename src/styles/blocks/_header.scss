@@ -1,0 +1,22 @@
+.header {
+  padding: 20px 0;
+  margin-bottom: 20px;
+}
+.header__row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.header__button {
+  display: flex;
+  flex-direction: column;
+  row-gap: 5px;
+
+  width: fit-content;
+}
+.header__button_item {
+  width: 57px;
+  height: 4px;
+
+  background: $colorBlack;
+}

@@ -1,0 +1,39 @@
+.person {
+  margin-bottom: 200px;
+}
+.person__wrapper {
+  position: relative;
+}
+.person__letters {
+  color: rgb(28, 28, 28);
+  font-size: 153px;
+  font-weight: 400;
+  line-height: 176px;
+  letter-spacing: 2px;
+}
+.person__first {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.person__second {
+  display: flex;
+  align-items: center;
+}
+.person__third {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.person__by {
+  margin-right: 330px;
+}
+.person__its {
+  margin-right: 300px;
+}
+.person__image {
+  position: absolute;
+  left: 50%;
+  top: 13%;
+  transform: translateX(-50%);
+}

@@ -1,0 +1,18 @@
+.hero {
+  margin-bottom: 200px;
+}
+.hero__subtitle {
+  max-width: 700px;
+  margin: 0 auto;
+}
+.subtitle_hero {
+  font-size: 26px;
+  font-weight: 400;
+  line-height: 33.8px;
+  text-align: center;
+}
+.hero__title {
+  span {
+    color: $colorAccent;
+  }
+}

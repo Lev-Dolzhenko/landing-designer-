@@ -1,0 +1,55 @@
+.about {
+  margin-bottom: 200px;
+}
+.about__title {
+  margin-bottom: 60px;
+}
+.subtitle_about {
+  font-size: 54px;
+  font-weight: 400;
+  line-height: 62.1px;
+
+  span {
+    color: $colorAccent;
+    font-size: 29px;
+    font-weight: 400;
+    line-height: 34.5px;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+
+    margin-right: 33px;
+  }
+}
+.about__button {
+  position: relative;
+
+  padding: 70px 50px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: $colorAccent;
+  font-size: 27px;
+  font-weight: 400;
+  line-height: 34.5px;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+
+  margin-left: auto;
+  margin-top: 30px;
+
+  &::after {
+    position: absolute;
+    content: url(../images/main/about/vectorButton.svg);
+    opacity: 0;
+    transform: scale(0);
+
+    transition: all 0.2s linear;
+  }
+
+  &:hover::after {
+    opacity: 1;
+    transform: scale(1);
+  }
+}

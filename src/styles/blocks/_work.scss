@@ -1,0 +1,65 @@
+.work {
+  margin-bottom: 200px;
+}
+.work__wrapper {
+}
+.work__title {
+  margin-bottom: 60px;
+}
+.work__wrapper_images {
+  display: flex;
+  justify-content: space-between;
+
+  margin-top: 100px;
+}
+.work__wrapper_image-three {
+  margin-top: 570px;
+}
+.work__wrapper_image-four {
+  margin-top: 100px;
+}
+.work__wrapper_subtitle {
+  margin-top: 55px;
+}
+.subtitle_work {
+  font-size: 62px;
+  font-weight: 400;
+  line-height: 71.3px;
+}
+.work__wrapper_image-six {
+  margin-top: 450px;
+}
+.work__wrapper_button {
+  position: relative;
+
+  padding: 70px 50px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: $colorAccent;
+  font-size: 27px;
+  font-weight: 400;
+  line-height: 34.5px;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 30px;
+
+  &::after {
+    position: absolute;
+    content: url(../images/main/about/vectorButton.svg);
+    opacity: 0;
+    transform: scale(0);
+
+    transition: all 0.2s linear;
+  }
+
+  &:hover::after {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
