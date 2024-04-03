@@ -1,5 +1,5 @@
 .work {
-  margin-bottom: 200px;
+  margin-bottom: clamp(40px, -1.136rem + 18.18vw, 200px);
 }
 .work__wrapper {
 }
@@ -10,36 +10,41 @@
   display: flex;
   justify-content: space-between;
 
-  margin-top: 100px;
+  column-gap: 30px;
+
+  margin-top: clamp(30px, 0.284rem + 7.95vw, 100px);
 }
 .work__wrapper_image-three {
-  margin-top: 570px;
+  margin-top: clamp(0px, -12.955rem + 64.77vw, 570px);
 }
 .work__wrapper_image-four {
-  margin-top: 100px;
+  margin-top: clamp(30px, 0.284rem + 7.95vw, 100px);
 }
 .work__wrapper_subtitle {
   margin-top: 55px;
 }
 .subtitle_work {
-  font-size: 62px;
-  font-weight: 400;
-  line-height: 71.3px;
+  line-height: clamp(38px, 1.83rem + 2.73vw, 62px);
+  font-size: clamp(16px, 0.136rem + 4.32vw, 54px);
+
+  img {
+    width: clamp(40px, 1.705rem + 3.98vw, 75px);
+  }
 }
 .work__wrapper_image-six {
-  margin-top: 450px;
+  margin-top: clamp(0px, -10.227rem + 51.14vw, 450px);
 }
 .work__wrapper_button {
   position: relative;
 
-  padding: 70px 50px;
+  padding: clamp(40px, 1.818rem + 3.41vw, 70px) 50px;
 
   display: flex;
   align-items: center;
   justify-content: center;
 
   color: $colorAccent;
-  font-size: 27px;
+  font-size: clamp(17px, 0.835rem + 1.14vw, 27px);
   font-weight: 400;
   line-height: 34.5px;
   letter-spacing: 0.5px;
@@ -47,7 +52,7 @@
 
   margin-left: auto;
   margin-right: auto;
-  margin-top: 30px;
+  margin-top: clamp(0px, -0.682rem + 3.41vw, 30px);
 
   &::after {
     position: absolute;
@@ -61,5 +66,23 @@
   &:hover::after {
     opacity: 1;
     transform: scale(1);
+  }
+}
+
+@media screen and (max-width: 740px) {
+  .work__wrapper_button:hover::after {
+    opacity: 0;
+    transform: scale(0);
+  }
+}
+
+@media screen and (max-width: 570px) {
+  .work__wrapper_images {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .work__wrapper_image-three {
+    margin-top: 50px;
   }
 }

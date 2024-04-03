@@ -1,14 +1,15 @@
 .hero {
-  margin-bottom: 200px;
+  margin-bottom: clamp(40px, -1.136rem + 18.18vw, 200px);
 }
 .hero__subtitle {
   max-width: 700px;
   margin: 0 auto;
+  margin-bottom: 30px;
 }
 .subtitle_hero {
-  font-size: 26px;
+  font-size: clamp(14px, 0.602rem + 1.36vw, 26px);
   font-weight: 400;
-  line-height: 33.8px;
+  line-height: clamp(18px, 0.784rem + 1.7vw, 33px);
   text-align: center;
 }
 .hero__title {
