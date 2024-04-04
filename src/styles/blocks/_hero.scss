@@ -13,7 +13,21 @@
   text-align: center;
 }
 .hero__title {
+  overflow: hidden;
   span {
-    color: $colorAccent;
+    color: $colorBlack ;
   }
+}
+.hero__image {
+  position: relative;
+
+  overflow: hidden;
+}
+.hero__image_overlay {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background: $colorAccent;
 }
